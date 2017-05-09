@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:id="@+id/moviepage"
+    android:layout_margin="5dp"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/movieImage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/movieImage"
+        android:layout_alignRight="@+id/movieImage"
+        android:src="@drawable/imdb"
+        android:layout_alignParentTop="true"
+        android:id="@+id/imdbrating"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_alignLeft="@id/movieImage"
+        android:gravity="center_horizontal"
+        android:id="@+id/moviesname"
+        android:layout_below="@+id/movieImage"
+        android:layout_alignStart="@+id/movieImage"
+        android:background="#faf9f9" />
+    <TextView
+        android:id="@+id/myImageViewText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/imdbrating"
+        android:layout_alignTop="@id/imdbrating"
+        android:layout_alignRight="@id/imdbrating"
+        android:layout_alignBottom="@id/imdbrating"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:textColor="#ffffff" />
+
+
+</RelativeLayout>
